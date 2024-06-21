@@ -37,7 +37,8 @@
       "Mandatory": "",
       "Style": "",
       "ID": "",
-      "Fieldset": "name"
+      "Fieldset": "name",
+      "Range": "Enter a number between 0 and 92"
     },
     {
       "Name": "Middle Initial",
@@ -49,7 +50,8 @@
       "Mandatory": "",
       "Style": "",
       "ID": "",
-      "Fieldset": "name"
+      "Fieldset": "name",
+      "Range": "Enter a number between 0 and 92"
     },
     {
       "Name": "Middle Initial",
@@ -61,7 +63,8 @@
       "Mandatory": "",
       "Style": "",
       "ID": "",
-      "Fieldset": "name"
+      "Fieldset": "name",
+      "Range": "Enter a number between 0 and 92"
     },
     {
       "Name": "Middle Initial",
@@ -73,7 +76,8 @@
       "Mandatory": "",
       "Style": "",
       "ID": "",
-      "Fieldset": "name"
+      "Fieldset": "name",
+      "Range": "Enter a number between 0 and 92"
     },
     {
       "Name": "Middle Initial",
@@ -85,7 +89,8 @@
       "Mandatory": "",
       "Style": "",
       "ID": "",
-      "Fieldset": "name"
+      "Fieldset": "name",
+      "Range": "Enter a number between 0 and 92"
     },
     {
       "Name": "natureOfInquiry",
@@ -96,18 +101,6 @@
       "Options": "",
       "Mandatory": "",
       "Style": "sub-heading",
-      "ID": "",
-      "Fieldset": ""
-    },
-    {
-      "Name": "monsters",
-      "Type": "checkbox",
-      "Label": "Monsters",
-      "Placeholder": "",
-      "Value": "",
-      "Options": "",
-      "Mandatory": "",
-      "Style": "",
       "ID": "",
       "Fieldset": ""
     },

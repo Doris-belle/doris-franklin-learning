@@ -9,7 +9,7 @@ import {
 
 export async function createModal(contentNodes) {
   console.log(contentNodes, '======')
-  await loadCSS(`${window.hlx.codeBasePath}/blocks/modal/modal.css`);
+  // await loadCSS(`${window.hlx.codeBasePath}/blocks/modal/modal.css`);
   const dialog = document.createElement('dialog');
   const dialogContent = document.createElement('div');
   dialogContent.classList.add('modal-content');
@@ -35,9 +35,9 @@ export async function createModal(contentNodes) {
 
   const block = buildBlock('modal', '');
   document.querySelector('main').append(block);
-  decorateBlock(block);
+  // decorateBlock(block);
   await loadBlock(block);
-  decorateIcons(closeButton);
+  // decorateIcons(closeButton);
 
   dialog.addEventListener('close', () => {
     document.body.classList.remove('modal-open');

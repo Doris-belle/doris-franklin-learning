@@ -18,6 +18,18 @@
   --light-color: #eee;
   --dark-color: #ccc;
   --text-color: black;
+  --talzenna-theme-bg-color: #f5f1ed;
+  --talzenna-a-fill-color:  #007BB6;
+  --talzenna-btn-fill-color: #FCD04F;
+  --talzenna-warn-text-color: #E81313;
+  --talzenna-normal-text-color: #333333;
+  --talzenna-blue-title-color: #0079B2;
+  --talzenna-blue-subtitle-color: #007BB6;
+  --talzenna-outa-text-color: #008DDD;
+  --talzenna-white-bg--color: #FFFFFF;
+  --talzenna-breakpoint-sp: 768px;
+  --talzenna-maxwidth-pc: 1080px;
+  /* --talzenna-breakpoint-pc: 1200px; */
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback;
@@ -198,7 +210,7 @@ main .section {
 
 @media (width >= 900px) {
   .section > div {
-    max-width: 1200px;
+    max-width: var(--talzenna-maxwidth-pc);
     margin: auto;
   }
 }

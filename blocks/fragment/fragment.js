@@ -35,6 +35,13 @@ export async function loadFragment(path) {
 
       decorateMain(main);
       await loadBlocks(main);
+      const footerMenu = document.querySelector('.footer-menu');
+      const menuLi = document.querySelectorAll('.footer-menu ul >li ul ');
+      if(menuLi) {
+        menuLi.forEach((subUl) => {
+          subUl.classList.add('subUl')
+        })
+      }
       return main;
     }
   }

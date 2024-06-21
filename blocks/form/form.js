@@ -1,5 +1,5 @@
 import createField from './form-fields.js';
-import { sampleRUM } from '../../scripts/aem.js';
+// import { sampleRUM } from '../../scripts/aem.js';
 
 async function createForm(formHref) {
   const { pathname } = new URL(formHref);
@@ -43,12 +43,12 @@ function generatePayload(form) {
   return payload;
 }
 
-function handleSubmitError(form, error) {
-  // eslint-disable-next-line no-console
-  console.error(error);
-  form.querySelector('button[type="submit"]').disabled = false;
-  sampleRUM('form:error', { source: '.form', target: error.stack || error.message || 'unknown error' });
-}
+// function handleSubmitError(form, error) {
+//   // eslint-disable-next-line no-console
+//   console.error(error);
+//   form.querySelector('button[type="submit"]').disabled = false;
+//   sampleRUM('form:error', { source: '.form', target: error.stack || error.message || 'unknown error' });
+// }
 
 async function handleSubmit(form) {
   if (form.getAttribute('data-submitting') === 'true') return;
@@ -71,7 +71,7 @@ async function handleSubmit(form) {
     });
     if (response.ok) {
       console.log(response, '================')
-      sampleRUM('form:submit', { source: '.form', target: form.dataset.action });
+      // sampleRUM('form:submit', { source: '.form', target: form.dataset.action });
       // if (form.dataset.confirmation) {
       //   window.location.href = form.dataset.confirmation;
       // }
